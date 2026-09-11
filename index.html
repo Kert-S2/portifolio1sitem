@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapa & Cia — Lanchonete no Jardim das Flores</title>
+<meta name="description" content="Lanches, porções e bebidas feitos na hora, na chapa quente. Peça pelo WhatsApp ou venha comer no salão.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a href="#topo" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="4" y="18" width="32" height="6" rx="1" fill="currentColor"/>
+        <rect x="4" y="27" width="32" height="4" rx="1" fill="currentColor" opacity="0.6"/>
+        <path d="M10 18 C10 12, 14 8, 20 8 C26 8, 30 12, 30 18" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>Chapa <em>&amp;</em> Cia</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#local">Localização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="whats-pill" href="https://wa.me/5581998765432" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.8 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.5.3.1.2.1.9-.1 1.6z"/></svg>
+      <span>(81) 99876-5432</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMobile" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Navegação mobile">
+    <a href="#cardapio">Cardápio</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#local">Localização</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main id="topo">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-kicker">Jardim das Flores, desde 2015</p>
+        <h1>Lanche feito na hora,<br>do jeito que só a<br><span class="hero-highlight">chapa quente</span> faz.</h1>
+        <p class="hero-sub">X-tudo, porções pra dividir e aquele misto quente que não sai da memória. Tudo pedido na hora, sem fila de espera longa.</p>
+        <div class="hero-actions">
+          <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
+          <a href="https://wa.me/5581998765432" target="_blank" rel="noopener" class="btn btn-outline">Pedir no WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 320 320" class="grill-svg">
+          <defs>
+            <linearGradient id="grillGlow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#E8A93A"/>
+              <stop offset="100%" stop-color="#C1432E"/>
+            </linearGradient>
+          </defs>
+          <circle cx="160" cy="160" r="140" fill="#2B2119"/>
+          <g stroke="url(#grillGlow)" stroke-width="6" stroke-linecap="round">
+            <line x1="70" y1="110" x2="250" y2="110"/>
+            <line x1="70" y1="140" x2="250" y2="140"/>
+            <line x1="70" y1="170" x2="250" y2="170"/>
+            <line x1="70" y1="200" x2="250" y2="200"/>
+            <line x1="70" y1="230" x2="250" y2="230"/>
+          </g>
+          <g class="steam">
+            <path d="M120 95 C110 75, 130 65, 120 45" stroke="#F3E9D8" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+            <path d="M160 95 C150 70, 172 60, 160 35" stroke="#F3E9D8" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M200 95 C190 75, 210 65, 200 45" stroke="#F3E9D8" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>X-TUDO &middot; MISTO QUENTE &middot; BATATA COM CHEDDAR &middot; CACHORRO-QUENTE &middot; MILKSHAKE &middot; X-TUDO &middot; MISTO QUENTE &middot; BATATA COM CHEDDAR &middot; CACHORRO-QUENTE &middot; MILKSHAKE &middot;</span>
+      <span>X-TUDO &middot; MISTO QUENTE &middot; BATATA COM CHEDDAR &middot; CACHORRO-QUENTE &middot; MILKSHAKE &middot; X-TUDO &middot; MISTO QUENTE &middot; BATATA COM CHEDDAR &middot; CACHORRO-QUENTE &middot; MILKSHAKE &middot;</span>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="sobre-inner">
+      <h2>Uma esquina, uma chapa e quase dez anos de fila</h2>
+      <p>A Chapa &amp; Cia começou em 2015 num carrinho de esquina no Jardim das Flores, com o seu José fritando batata pra vizinhança. Hoje é um salão de verdade, mas a receita não mudou: pão fresco, carne na chapa até formar aquela casquinha, e queijo que escorre até o cotovelo.</p>
+      <p>Se é pra comer no salão, levar pra casa ou pedir pelo WhatsApp, o lanche sai igual — quente, na hora, sem pressa de te tirar da mesa.</p>
+    </div>
+  </section>
+
+  <section class="cardapio" id="cardapio">
+    <div class="cardapio-inner">
+      <h2>Cardápio</h2>
+
+      <div class="tabs" role="tablist" aria-label="Categorias do cardápio">
+        <button class="tab is-active" role="tab" aria-selected="true" data-cat="lanches">Lanches</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="porcoes">Porções</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="bebidas">Bebidas</button>
+      </div>
+
+      <ul class="menu-list" id="menuList" data-cat="lanches">
+
+        <li class="menu-item" data-cat="lanches">
+          <div class="menu-item-head">
+            <h3>X-Tudo Chapa</h3>
+            <span class="price">R$ 24,90</span>
+          </div>
+          <p>Pão, hambúrguer 150g, presunto, queijo, ovo, bacon e salada</p>
+        </li>
+        <li class="menu-item" data-cat="lanches">
+          <div class="menu-item-head">
+            <h3>X-Salada Clássico</h3>
+            <span class="price">R$ 18,90</span>
+          </div>
+          <p>Hambúrguer, queijo, alface, tomate e maionese da casa</p>
+        </li>
+        <li class="menu-item" data-cat="lanches">
+          <div class="menu-item-head">
+            <h3>X-Bacon Duplo</h3>
+            <span class="price">R$ 26,90</span>
+          </div>
+          <p>Dois hambúrgueres, bacon crocante em dobro e queijo derretido</p>
+        </li>
+        <li class="menu-item" data-cat="lanches">
+          <div class="menu-item-head">
+            <h3>Misto Quente Chapado</h3>
+            <span class="price">R$ 12,90</span>
+          </div>
+          <p>Presunto e queijo prensados na chapa até dourar</p>
+        </li>
+        <li class="menu-item" data-cat="lanches">
+          <div class="menu-item-head">
+            <h3>Cachorro-quente Especial</h3>
+            <span class="price">R$ 16,90</span>
+          </div>
+          <p>Salsicha, purê, milho, batata palha e queijo ralado</p>
+        </li>
+
+        <li class="menu-item" data-cat="porcoes" hidden>
+          <div class="menu-item-head">
+            <h3>Batata Frita (300g)</h3>
+            <span class="price">R$ 19,90</span>
+          </div>
+          <p>Sequinha por fora, macia por dentro</p>
+        </li>
+        <li class="menu-item" data-cat="porcoes" hidden>
+          <div class="menu-item-head">
+            <h3>Batata com Cheddar e Bacon</h3>
+            <span class="price">R$ 26,90</span>
+          </div>
+          <p>Cobertura generosa, serve bem duas pessoas</p>
+        </li>
+        <li class="menu-item" data-cat="porcoes" hidden>
+          <div class="menu-item-head">
+            <h3>Frango a Passarinho</h3>
+            <span class="price">R$ 32,90</span>
+          </div>
+          <p>Frango frito e temperado, com limão e pimenta à parte</p>
+        </li>
+        <li class="menu-item" data-cat="porcoes" hidden>
+          <div class="menu-item-head">
+            <h3>Calabresa Acebolada</h3>
+            <span class="price">R$ 28,90</span>
+          </div>
+          <p>Calabresa na chapa com cebola bem dourada</p>
+        </li>
+
+        <li class="menu-item" data-cat="bebidas" hidden>
+          <div class="menu-item-head">
+            <h3>Refrigerante lata</h3>
+            <span class="price">R$ 6,00</span>
+          </div>
+          <p>Coca-Cola, Guaraná ou Fanta</p>
+        </li>
+        <li class="menu-item" data-cat="bebidas" hidden>
+          <div class="menu-item-head">
+            <h3>Suco natural</h3>
+            <span class="price">R$ 8,00</span>
+          </div>
+          <p>Feito na hora — pergunte o sabor do dia</p>
+        </li>
+        <li class="menu-item" data-cat="bebidas" hidden>
+          <div class="menu-item-head">
+            <h3>Água mineral</h3>
+            <span class="price">R$ 4,00</span>
+          </div>
+          <p>Com ou sem gás</p>
+        </li>
+        <li class="menu-item" data-cat="bebidas" hidden>
+          <div class="menu-item-head">
+            <h3>Milkshake</h3>
+            <span class="price">R$ 14,90</span>
+          </div>
+          <p>Chocolate, morango ou ovomaltine</p>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section class="destaques">
+    <div class="destaques-inner">
+      <div class="destaque">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 9v7l5 3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        <h3>Pedido pronto em 20 min</h3>
+        <p>Sem espera longa — chapa quente o dia todo</p>
+      </div>
+      <div class="destaque">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 14 L16 6 L26 14 V26 H6 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <h3>Entrega no bairro</h3>
+        <p>Jardim das Flores e regiões vizinhas</p>
+      </div>
+      <div class="destaque">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5 C10 5 6 10 6 15 C6 22 16 28 16 28 C16 28 26 22 26 15 C26 10 22 5 16 5 Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <h3>Desde 2015 no bairro</h3>
+        <p>Do carrinho de esquina ao salão de hoje</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="local" id="local">
+    <div class="local-inner">
+      <div class="local-info">
+        <h2>Onde estamos</h2>
+        <p class="local-endereco">Rua das Palmeiras, 245 — Jardim das Flores</p>
+        <dl class="horarios">
+          <div><dt>Terça a domingo</dt><dd>18h às 00h</dd></div>
+          <div><dt>Segunda-feira</dt><dd>Fechado</dd></div>
+        </dl>
+        <a href="https://wa.me/5581998765432" target="_blank" rel="noopener" class="btn btn-primary">Chamar no WhatsApp</a>
+      </div>
+      <div class="local-mapa" role="img" aria-label="Mapa ilustrativo mostrando a localização da Chapa e Cia na Rua das Palmeiras">
+        <svg viewBox="0 0 400 300" class="mapa-svg">
+          <rect width="400" height="300" fill="#2B2119"/>
+          <path d="M0 90 H400" stroke="#4a3b2a" stroke-width="10"/>
+          <path d="M0 210 H400" stroke="#4a3b2a" stroke-width="10"/>
+          <path d="M150 0 V300" stroke="#4a3b2a" stroke-width="10"/>
+          <path d="M280 0 V300" stroke="#4a3b2a" stroke-width="6"/>
+          <circle cx="150" cy="150" r="10" fill="#C1432E"/>
+          <path d="M150 150 m0 -22 a22 22 0 1 1 -0.1 0 Z" fill="none"/>
+          <path d="M150 128 c14 0 22 10 22 22 c0 16 -22 34 -22 34 c0 0 -22 -18 -22 -34 c0 -12 8 -22 22 -22 Z" fill="#E8A93A"/>
+          <circle cx="150" cy="150" r="6" fill="#1C1710"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape" id="contato">
+  <div class="rodape-inner">
+    <div class="rodape-brand">
+      <span>Chapa <em>&amp;</em> Cia</span>
+      <p>Rua das Palmeiras, 245 — Jardim das Flores</p>
+    </div>
+    <div class="rodape-links">
+      <a href="https://wa.me/5581998765432" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">@chapaecia</a>
+      <a href="#cardapio">Cardápio</a>
+    </div>
+  </div>
+  <p class="rodape-nota">Site de demonstração — Starroll Studios</p>
+</footer>
+
+<a class="whats-float" href="https://wa.me/5581998765432" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.8 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.5.3.1.2.1.9-.1 1.6z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
